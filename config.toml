@@ -1,4 +1,4 @@
 baseURL = 'https://morendav.github.io/'
 languageCode = 'en-us'
-title = 'David's idea sharing site'
+title = "David's idea sharing site"
 theme = "ananke"

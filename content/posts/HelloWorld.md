@@ -1,7 +1,7 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-draft: true # until false then posted to production
+title: "HelloWorld"
+date: 2022-10-01T18:41:39-07:00
+draft: false # until false then posted to production
 author: "david.moreno"
 description: "some short form description here"
 tags: [
@@ -20,4 +20,6 @@ ShowBreadCrumbs: false
 #   caption: "<text>"
 ---
 
+
+Hello world!
 ---

@@ -40,7 +40,7 @@ I am David Moreno, born and raised in the [Minneapolis](https://goo.gl/maps/3Y5z
 
 I enjoy spending my time learning new things, spending time outdoors, and spending time with my family. Discovering activities that allow for all three at the same time is the sweet spot, if you got leads on this please let me know. Here is a fun pseudonymized pictured of myself next to an Alpaca.
 
-{{< figure src="/images/about/profile_pic_pixelated.jpg#center" title="Pixelated engineer & an Alpaca, Circa 2019" caption="Engineer makes poor attempt at privacy joke in 'about me' section" link="/images/about/deep_space_image.jpeg" target="_blank" class="align-center" >}}
+{{< figure src="/images/about/profile_pic_pixelated.jpg#center" title="Pixelated engineer & an alpaca, Circa 2019" caption="Engineer makes poor attempt at privacy joke in 'about me' section" link="/images/about/profile_pic_pixelated.jpg" target="_blank" class="align-center" >}}
 
 In my copious amounts of free time I'm excited to bring to you some neat stuff I know.
 

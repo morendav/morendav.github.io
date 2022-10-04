@@ -58,7 +58,7 @@ home = [ "HTML", "RSS", "JSON" ]
 [params]
 env = "production"
 # description = "Some description here"
-author = "David Moreno"
+author = "david.moreno"
 defaultTheme = "dark"
 disableThemeToggle = false
 displayFullLangName = true
@@ -82,7 +82,7 @@ tocopen = false
   ## Enabling ProfileMode settings start here
   [params.profileMode]
   enabled = false
-  title = "Idea Sharing (noun)"
+  title = "Idea Sharing (verb)"
   summary = """
   The act of distributing structured content on a mix of unrelated or semirelated topics. \n
   // Welcome to my personal idea sharing site (read: blog) \n
@@ -105,7 +105,7 @@ tocopen = false
   ## Enabling ProfileMode settings end here
 
   [params.homeInfoParams]
-  Title = "Idea Sharing (v)"
+  Title = "Idea Sharing (verb)"
   Content = """
   The act of distributing structured content on a mix of unrelated topics. \n
   -

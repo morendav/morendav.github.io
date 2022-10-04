@@ -2,38 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on home</title>
-    <link>https://morendav.github.io/tags/</link>
+    <link>https://dlm.rocks/tags/</link>
     <description>Recent content in Tags on home</description>
     <image>
-      <url>https://morendav.github.io/papermod-cover.png</url>
-      <link>https://morendav.github.io/papermod-cover.png</link>
+      <url>https://dlm.rocks/papermod-cover.png</url>
+      <link>https://dlm.rocks/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 01 Oct 2022 18:41:39 -0700</lastBuildDate><atom:link href="https://morendav.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Oct 2022 21:58:50 -0700</lastBuildDate><atom:link href="https://dlm.rocks/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>tag1</title>
-      <link>https://morendav.github.io/tags/tag1/</link>
-      <pubDate>Sat, 01 Oct 2022 18:41:39 -0700</pubDate>
+      <title>Front-end</title>
+      <link>https://dlm.rocks/tags/front-end/</link>
+      <pubDate>Sun, 02 Oct 2022 21:58:50 -0700</pubDate>
       
-      <guid>https://morendav.github.io/tags/tag1/</guid>
+      <guid>https://dlm.rocks/tags/front-end/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>tag2</title>
-      <link>https://morendav.github.io/tags/tag2/</link>
-      <pubDate>Sat, 01 Oct 2022 18:41:39 -0700</pubDate>
+      <title>Walkthrough</title>
+      <link>https://dlm.rocks/tags/walkthrough/</link>
+      <pubDate>Sun, 02 Oct 2022 21:58:50 -0700</pubDate>
       
-      <guid>https://morendav.github.io/tags/tag2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tagn</title>
-      <link>https://morendav.github.io/tags/tagn/</link>
-      <pubDate>Sat, 01 Oct 2022 18:41:39 -0700</pubDate>
-      
-      <guid>https://morendav.github.io/tags/tagn/</guid>
+      <guid>https://dlm.rocks/tags/walkthrough/</guid>
       <description></description>
     </item>
     

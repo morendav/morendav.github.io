@@ -2,10 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://morendav.github.io/categories/</loc>
+    <loc>https://dlm.rocks/tags/front-end/</loc>
+    <lastmod>2022-10-02T21:58:50-07:00</lastmod>
   </url><url>
-    <loc>https://morendav.github.io/</loc>
+    <loc>https://dlm.rocks/</loc>
+    <lastmod>2022-10-02T21:58:50-07:00</lastmod>
   </url><url>
-    <loc>https://morendav.github.io/tags/</loc>
+    <loc>https://dlm.rocks/posts/how_this_all_started/</loc>
+    <lastmod>2022-10-02T21:58:50-07:00</lastmod>
+  </url><url>
+    <loc>https://dlm.rocks/posts/</loc>
+    <lastmod>2022-10-02T21:58:50-07:00</lastmod>
+  </url><url>
+    <loc>https://dlm.rocks/tags/</loc>
+    <lastmod>2022-10-02T21:58:50-07:00</lastmod>
+  </url><url>
+    <loc>https://dlm.rocks/tags/walkthrough/</loc>
+    <lastmod>2022-10-02T21:58:50-07:00</lastmod>
+  </url><url>
+    <loc>https://dlm.rocks/about/</loc>
+    <lastmod>2022-10-01T18:42:29-07:00</lastmod>
+  </url><url>
+    <loc>https://dlm.rocks/archives/</loc>
+    <lastmod>2022-10-01T18:42:29-07:00</lastmod>
+  </url><url>
+    <loc>https://dlm.rocks/categories/</loc>
+  </url><url>
+    <loc>https://dlm.rocks/search/</loc>
+    <lastmod>2022-10-01T18:42:29-07:00</lastmod>
+  </url><url>
+    <loc>https://dlm.rocks/series/</loc>
   </url>
 </urlset>

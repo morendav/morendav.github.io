@@ -9,8 +9,8 @@ tags: [
   "tag2",
   "tagn",
 ]
-ShowToc: false
-ShowBreadCrumbs: false
+ShowToc: true
+ShowBreadCrumbs: true
 
 ## including a cover image
 # cover:

@@ -1,7 +1,6 @@
 
 ## Site main index configuration
-baseURL = "https://morendav.github.io/"
-# languageCode: "en-us"
+baseURL = "https://dlm.rocks/"
 title = "home"
 paginate = 10
 theme = "PaperMod"
@@ -15,7 +14,7 @@ enableRobotsTXT = true
 enableGitInfo = true
 enableEmoji = true
 pygmentsUseClasses = true
-# googleAnalytics = "UA-123-45"
+googleAnalytics = "G-H6P6WVSTW2"
 
 [minify]
 disableXML = true
@@ -61,7 +60,7 @@ env = "production"
 # description = "Some description here"
 author = "David Moreno"
 defaultTheme = "dark"
-disableThemeToggle = true
+disableThemeToggle = false
 displayFullLangName = true
 ShowShareButtons = true
 ShowReadingTime = true

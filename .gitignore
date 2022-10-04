@@ -1,2 +1,6 @@
 # ignore internal documentation & resources
 .internal_docs/
+
+# ignore firebase deployment configs
+.firebaserc
+.firebase/

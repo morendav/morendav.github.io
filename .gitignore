@@ -4,3 +4,6 @@
 # ignore firebase deployment configs
 .firebaserc
 .firebase/
+
+# ignore macos artifacts
+.DS_Store

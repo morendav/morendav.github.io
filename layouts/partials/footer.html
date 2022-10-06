@@ -1,3 +1,6 @@
+<!--
+  footer element for work, theme, and hosting information
+-->
 <footer class="footer">
     {{- if .Site.Copyright }}
     <span>{{ .Site.Copyright | markdownify }}</span>
@@ -13,10 +16,25 @@
     </span>
 </footer>
 
-
+<!--
+  Surface 'scroll to top' button if page is not at top
+-->
+{{- if (not .Site.Params.disableScrollToTop) }}
+<a href="#top" aria-label="Go to top" title="Scroll to top">
+    <button class="top-link" id="top-link" type="button" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+{{- end }}
 
 {{- partial "extend_footer.html" . }}
 
+
+<!--
+  Surface 'scroll to top' button if page is not at top
+-->
 <script>
     let menu = document.getElementById('menu')
     menu.scrollLeft = localStorage.getItem("menu-scroll-position");
@@ -42,9 +60,42 @@
             }
         });
     });
-
 </script>
 
+
+<!--
+  Footer from themes/PaperMod/Layouts/Parials/footer.html
+-->
+{{- if (not .Site.Params.disableScrollToTop) }}
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+{{- end }}
+
+{{- if (not .Site.Params.disableThemeToggle) }}
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+{{- end }}
 
 {{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Site.Params.ShowCodeCopyButtons)) }}
 <script>

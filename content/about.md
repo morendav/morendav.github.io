@@ -29,6 +29,23 @@ Recently, infrared radiation was recorded from the deepest pocket of space we've
 {{< figure src="/images/about/deep_space_image.jpeg#center" title="Deep Universe" caption="Photo by [NASA’s James Webb Telescope](https://www.nasa.gov/image-feature/goddard/2022/nasa-s-webb-delivers-deepest-infrared-image-of-universe-yet)" link="/images/about/deep_space_image.jpeg" target="_blank" class="align-center" >}}
 
 
+### A note on privacy
+  _... just when you thought you'd get away without some privacy talk ..._
+
+This site uses [Google Analytics](https://support.google.com/analytics/topic/2919631?hl=en&ref_topic=1008008), I use this data to understand:
+* what content my audience is engaging with (e.g. which pages are visited)
+* who my audience is, in coarse terms (e.g. coarse geotag)
+
+These data are used to measure content engagement.
+
+This site does not
+* have a subscribe feature (I don't want your email and you don't want more spam)
+* have log-in's, comments, or other content submission forms
+* include `referrer` in share links
+
+This site is also [open source](https://github.com/morendav/morendav.github.io), so you can verify this independently :raised_hands:
+
+
 ---------
 
 
@@ -36,7 +53,7 @@ Recently, infrared radiation was recorded from the deepest pocket of space we've
 
 Greetings.
 
-I am David Moreno, born and raised in the [Minneapolis](https://goo.gl/maps/3Y5zo4mPiEcXe1tA6), and currently living in California.
+I am David, born and raised in the [Minneapolis](https://goo.gl/maps/3Y5zo4mPiEcXe1tA6), and currently living in California.
 
 I enjoy spending my time learning new things, spending time outdoors, and spending time with my family. Discovering activities that allow for all three at the same time is the sweet spot, if you got leads on this please let me know. Here is a fun pseudonymized pictured of myself next to an Alpaca.
 

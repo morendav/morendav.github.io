@@ -1,6 +1,6 @@
 ---
 title: "How this all started..."
-date: 2022-10-02T21:58:50-07:00
+date: 2022-10-09T21:58:50-07:00
 draft: false # until false then posted to production
 author: "david.moreno"
 description: "'How to build a blog' as this blog's first blog post"
@@ -130,7 +130,7 @@ I had intended to learn some FE basics + start writing this year. Setting up thi
 
 
 
-* **Time:** My primary goal is to have a place to write, but my secondary goal is to learn by tinkering on my site. A tension arises here as the tinkering pulls time out of writing, and vice versa.
+* **Time:** My primary goal is to have a place to write, but my secondary goal is having a sandbox to explore and configure a site. A tension arises here as the tinkering pulls time out of writing, and vice versa.
 
 
 ## Second, generate the content

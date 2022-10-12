@@ -39,11 +39,11 @@ This site uses [Google Analytics](https://support.google.com/analytics/topic/291
 These data are used to measure content engagement.
 
 This site does not
-* have a subscribe feature (I don't want your email and you don't want more spam)
+* have a subscribe feature
 * have log-in's, comments, or other content submission forms
 * include `referrer` in share links
 
-This site is also [open source](https://github.com/morendav/morendav.github.io), so you can verify this independently :raised_hands:
+This site is also [open source](https://github.com/morendav/morendav.github.io), so you can independently verify this :raised_hands:
 
 
 ---------

@@ -129,9 +129,6 @@ tocopen = false
   name = "twitter"
   url = "https://twitter.com/_morendav"
 
-  [[params.socialIcons]]
-  name = "instagram"
-  url = "https://www.instagram.com/morendav/"
 
   [[params.socialIcons]]
   name = "Rss"

@@ -18,7 +18,7 @@ Here you will find ramblings about topics like:
 * privacy & cybersecurity
 * ML & data science
 * Neat books
-* Good podcast recommendations
+* Good podcax1st recommendations
 * Maybe some artwork too
 
 *_Note: topics list is growing and subject to change_

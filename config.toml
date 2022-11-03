@@ -113,9 +113,6 @@ tocopen = false
   // Enjoy your stay //
   """
 
-  [[params.socialIcons]]
-  name = "email"
-  url = "mailto:d.l.moreno91@gmail.com"
 
   [[params.socialIcons]]
   name = "linkedin"
@@ -128,7 +125,6 @@ tocopen = false
   [[params.socialIcons]]
   name = "twitter"
   url = "https://twitter.com/_morendav"
-
 
   [[params.socialIcons]]
   name = "Rss"

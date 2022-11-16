@@ -85,9 +85,10 @@ tocopen = false
   enabled = false
   title = "Idea Sharing (verb)"
   summary = """
-  The act of distributing structured content on a mix of unrelated or semirelated topics. \n
-  // Welcome to my personal idea sharing site (read: blog) \n
-  // Enjoy your stay
+  The act of distributing structured content on a mix of unrelated topics. \n
+  -
+  // Welcome to my corner of the internet //\n
+  // Enjoy your stay //
   """
   imageUrl = "#" # insert home page image here
   imageTitle = "landing page title for image"
@@ -110,7 +111,7 @@ tocopen = false
   Content = """
   The act of distributing structured content on a mix of unrelated topics. \n
   -
-  // Welcome to my personal idea sharing site //\n
+  // Welcome to my corner of the internet //\n
   // Enjoy your stay //
   """
 

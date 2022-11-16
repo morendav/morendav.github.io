@@ -2,13 +2,15 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true # until false then posted to production
-author: "david.moreno"
+author: "D.Moreno"
 description: "some short form description here"
 tags: [
   "tag1",
   "tag2",
   "tagn",
 ]
+# Page parameters
+math : true
 ShowToc: true
 ShowBreadCrumbs: true
 
@@ -20,4 +22,18 @@ ShowBreadCrumbs: true
 #   caption: "<text>"
 ---
 
----
+
+some quick description for home page here
+
+<!--more-->
+
+
+
+# Summary:
+
+long form summary of post
+
+
+# :pushpin: TL;DR
+
+table

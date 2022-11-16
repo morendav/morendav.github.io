@@ -62,6 +62,7 @@ author = "david.moreno"
 defaultTheme = "dark"
 disableThemeToggle = false
 displayFullLangName = true
+math = false
 ShowShareButtons = true
 ShowReadingTime = true
 ShowLastMod = true
@@ -113,6 +114,9 @@ tocopen = false
   // Enjoy your stay //
   """
 
+  [[params.socialIcons]]
+  name = "email"
+  url = "mailto:morendav68@gmail.com"
 
   [[params.socialIcons]]
   name = "linkedin"
@@ -147,7 +151,7 @@ disabled = false
 simple = true
 
 [privacy.twitter]
-disabled = false
+disabled = true
 enableDNT = true
 simple = true
 

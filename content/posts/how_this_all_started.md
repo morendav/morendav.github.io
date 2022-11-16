@@ -2,7 +2,7 @@
 title: "How this all started..."
 date: 2022-10-09T21:58:50-07:00
 draft: false # until false then posted to production
-author: "david.moreno"
+author: "D.Moreno"
 description: "'How to build a blog' as this blog's first blog post"
 tags: [
   "Front-end",
@@ -26,7 +26,7 @@ In this inaugural post I walk through the decision making that informed the desi
 
 
 
-# TL;DR
+# :pushpin: TL;DR
 
 This site is
 * hosted on [Firebase](https://firebase.google.com/)

@@ -242,9 +242,6 @@ Let  \(\epsilon \rightarrow 0\)
 </p>
 {{</ math.inline >}}
 
->>>> Equation 02.1					Pr(A(D1) ∈ 𝑆) /  Pr(A(D2) ∈ 𝑆)  ≤ exp( 𝜖 )
-        Pr(A(D1) ∈ 𝑆) /  Pr(A(D2) ∈ 𝑆)  ≤ 1
-
 $$
 \tag{2}
   \Bigg\(

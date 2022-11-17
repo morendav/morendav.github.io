@@ -61,7 +61,7 @@ This site is also [open source](https://github.com/morendav/morendav.github.io),
 
 Greetings.
 
-I am David, born and raised in the [Minneapolis](https://goo.gl/maps/3Y5zo4mPiEcXe1tA6), and currently living in California.
+I am David, born and raised in the [Minneapolis area](https://goo.gl/maps/3Y5zo4mPiEcXe1tA6), and currently living in California.
 
 I enjoy spending my time learning new things, spending time outdoors, and spending time with my family. Discovering activities that allow for all three at the same time is the sweet spot, if you got leads on this please let me know. Here is a fun pseudonymized pictured of myself next to an Alpaca.
 

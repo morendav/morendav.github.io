@@ -409,7 +409,7 @@ For skew correction, we want to keep the count of unique users (in the dataset, 
   class="align-center"
 >}}
 
-These histograms are normalized to their respective average salaries. Eliminating the long tail results in over a degree of magnitude change for the normalized noise distributions. :eyes:
+These histograms are normalized to their respective distributions' average salary. Eliminating the long tail results in over a degree of magnitude change for the normalized noise distributions. :eyes:
 
 
 

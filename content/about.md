@@ -48,7 +48,7 @@ These data are used to measure content engagement.
 
 This site does not
 * have a subscribe feature
-* have log-in's, comments, or other content submission forms
+* comments or other content submission forms
 * include `referrer` in share links
 
 This site is also [open source](https://github.com/morendav/morendav.github.io), so you can independently verify this :raised_hands:
@@ -74,7 +74,7 @@ I enjoy spending my time learning new things, spending time outdoors, and spendi
     target="_blank" class="align-center"
 >}}
 
-In my copious amounts of free time I'm excited to bring to you some neat stuff I know.
+In my free time I'm excited to write about stuff I find interesting, & I hope others find neat too.
 
 Want more about me? I'll keep it short:
 

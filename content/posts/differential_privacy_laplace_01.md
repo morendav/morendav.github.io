@@ -349,7 +349,7 @@ In addition to this clean up, we can drop all but the last month’s data for si
   class="align-center"
 >}}
 
-This is a terrific dimension to explore: it exhibits a rich (pun intended :moneybag:), long tailed right skew. Note that the tail is so long that it is impractical to plot annual income in linear scale (left), in log-scale we get a greater sense of where most users are and where only a few, very wealthy users are (wonder if they are hiring :wink:)
+This is a terrific dimension to explore: it exhibits a rich (pun intended :moneybag:), long tailed right skew. Note that the tail is so long that it is impractical to plot annual income in linear scale (left), in log-scale we get a greater sense of where most users are and where only a few, very wealthy users are.
 
 
 ## The Private Queries

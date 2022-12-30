@@ -96,7 +96,7 @@ AI art will no more undermine the value of artists in our future than cameras ha
 --------
 
 
-# AI Wins Artfare, Community Pushes Back
+# AI Wins Art Contest, Community Pushes Back
 
 
 > I feel like, right now, the art community is heading into an existential crisis if it’s not already. A big factor of that is … the disruptive technology of open AI. A lot of people are saying, ‘AI is never going to take over creative jobs, that’s never going to be something that artists and sculptors have to worry about.’ And here we are smack in the middle of it, dealing with it right now.

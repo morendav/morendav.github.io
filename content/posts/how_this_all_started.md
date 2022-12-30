@@ -427,7 +427,14 @@ hugo server -D
 
 
 
-{{< figure src="/images/posts/how_this_all_started/firebase.png#center" title="Firebase Hosting" caption="Adding custom domain to Firebase hosting" link="/images/about/deep_space_image.jpeg" target="_blank" class="align-center" >}}
+{{< figure
+  src="/images/posts/how_this_all_started/firebase.png#center"
+  title="Firebase Hosting"
+  caption="Adding custom domain to Firebase hosting"
+  link="/images/posts/how_this_all_started/firebase.png"
+  target="_blank"
+  class="align-center"
+>}}
 
 
 
@@ -436,7 +443,14 @@ hugo server -D
     2. Under “Custom Records” select “Manage custom records”
     3. Enter in the custom domain **somenamehere.com** and **[www.somenamehere.com](http://www.somenamehere.com)** here along with the noted IP addresses and the record types.
 
-{{< figure src="/images/posts/how_this_all_started/domains.png#center" title="Google Domains" caption="Updating DNS Register" link="/images/about/deep_space_image.jpeg" target="_blank" class="align-center" >}}
+{{< figure
+  src="/images/posts/how_this_all_started/domains.png#center"
+  title="Google Domains"
+  caption="Updating DNS Register"
+  link="/images/posts/how_this_all_started/domains.png" 
+  target="_blank"
+  class="align-center"
+>}}
 
 
 

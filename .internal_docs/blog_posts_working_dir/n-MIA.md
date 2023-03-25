@@ -1,11 +1,7 @@
 Idea:
 * train a binary classificaiton model
-* demonstrate epoch x overfitting by showing that performance against test data plateaus and then drops off
-
-
-
-
-
+* pause at X epoch, demonstrate overfitting by comparing training data vs test data accuracy
+* Run MIA at each epoch, demonstrate that as the model becomes overfit the MIA returns a higher measure of memorization
 
 
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Membership Inference Attack on idea.sharing</title>
+    <link>https://www.dlm.rocks/tags/membership-inference-attack/</link>
+    <description>Recent content in Membership Inference Attack on idea.sharing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Jul 2023 20:09:00 -0800</lastBuildDate><atom:link href="https://www.dlm.rocks/tags/membership-inference-attack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Membership Inference Attack: Primer &amp; Case Study</title>
+      <link>https://www.dlm.rocks/blog/membership_inference_attack_01/</link>
+      <pubDate>Sat, 01 Jul 2023 20:09:00 -0800</pubDate>
+      
+      <guid>https://www.dlm.rocks/blog/membership_inference_attack_01/</guid>
+      <description>&lt;p&gt;Machine learning models depend on large troves of data to develop and improve their inference / prediction capabilities. These models generalize their abilities, but inevitably some of their training data is encoded or memorized within their trained parameters. This post explores a method of quantifying model memorization, factors that make models more prone to memorization, and provides some mitigations against memorization.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

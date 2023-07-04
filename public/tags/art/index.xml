@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Art on home</title>
-    <link>https://dlm.rocks/tags/art/</link>
-    <description>Recent content in Art on home</description>
-    <image>
-      <url>https://dlm.rocks/papermod-cover.png</url>
-      <link>https://dlm.rocks/papermod-cover.png</link>
-    </image>
+    <title>Art on idea.sharing</title>
+    <link>https://www.dlm.rocks/tags/art/</link>
+    <description>Recent content in Art on idea.sharing</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 29 Dec 2022 20:08:46 -0800</lastBuildDate><atom:link href="https://dlm.rocks/tags/art/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Dec 2022 20:08:46 -0800</lastBuildDate><atom:link href="https://www.dlm.rocks/tags/art/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI in Art &amp; Creativity</title>
-      <link>https://dlm.rocks/posts/ai_art_wins_art_contest/</link>
+      <link>https://www.dlm.rocks/blog/ai_art_wins_art_contest/</link>
       <pubDate>Thu, 29 Dec 2022 20:08:46 -0800</pubDate>
       
-      <guid>https://dlm.rocks/posts/ai_art_wins_art_contest/</guid>
-      <description>Artist enters AI generated art into contest and wins, faces push back from online communities.</description>
+      <guid>https://www.dlm.rocks/blog/ai_art_wins_art_contest/</guid>
+      <description>&lt;p&gt;Why concerns about these new tools are echoes from previous generations and what they mean for the future of art and creativity.&lt;/p&gt;</description>
     </item>
     
   </channel>

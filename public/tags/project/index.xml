@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project on idea.sharing</title>
+    <link>https://www.dlm.rocks/tags/project/</link>
+    <description>Recent content in Project on idea.sharing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Oct 2022 21:58:50 -0700</lastBuildDate><atom:link href="https://www.dlm.rocks/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How this all started...</title>
+      <link>https://www.dlm.rocks/blog/how_this_all_started/</link>
+      <pubDate>Sun, 09 Oct 2022 21:58:50 -0700</pubDate>
+      
+      <guid>https://www.dlm.rocks/blog/how_this_all_started/</guid>
+      <description>&lt;p&gt;In this inaugural post I walk through the decision making that informed the design of this site (which tools and technologies I used), and the steps to set it all up.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

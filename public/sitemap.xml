@@ -2,62 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dlm.rocks/posts/ai_art_wins_art_contest/</loc>
-    <lastmod>2022-12-29T21:33:14-08:00</lastmod>
+    <loc>https://www.dlm.rocks/tags/artificial-intelligence/</loc>
+    <lastmod>2023-07-01T20:09:00-08:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/tags/art/</loc>
-    <lastmod>2022-12-29T21:33:14-08:00</lastmod>
+    <loc>https://www.dlm.rocks/tags/case-study/</loc>
+    <lastmod>2023-07-01T20:09:00-08:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/tags/art-history/</loc>
-    <lastmod>2022-12-29T21:33:14-08:00</lastmod>
+    <loc>https://www.dlm.rocks/</loc>
+    <lastmod>2023-07-01T20:09:00-08:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/tags/artificial-intelligence/</loc>
-    <lastmod>2022-12-29T21:33:14-08:00</lastmod>
+    <loc>https://www.dlm.rocks/tags/membership-inference-attack/</loc>
+    <lastmod>2023-07-01T20:09:00-08:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/</loc>
-    <lastmod>2022-12-29T21:33:14-08:00</lastmod>
+    <loc>https://www.dlm.rocks/blog/membership_inference_attack_01/</loc>
+    <lastmod>2023-07-01T20:09:00-08:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/tags/opinion/</loc>
-    <lastmod>2022-12-29T21:33:14-08:00</lastmod>
+    <loc>https://www.dlm.rocks/tags/privacy/</loc>
+    <lastmod>2023-07-01T20:09:00-08:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/posts/</loc>
-    <lastmod>2022-12-29T21:33:14-08:00</lastmod>
+    <loc>https://www.dlm.rocks/tags/</loc>
+    <lastmod>2023-07-01T20:09:00-08:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/tags/</loc>
-    <lastmod>2022-12-29T21:33:14-08:00</lastmod>
+    <loc>https://www.dlm.rocks/blog/</loc>
+    <lastmod>2023-05-03T19:58:25-07:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/tags/case-study/</loc>
-    <lastmod>2022-11-17T16:21:04-08:00</lastmod>
+    <loc>https://www.dlm.rocks/projects/</loc>
+    <lastmod>2023-05-03T19:53:44-07:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/tags/differential-privacy/</loc>
-    <lastmod>2022-11-17T16:21:04-08:00</lastmod>
+    <loc>https://www.dlm.rocks/projects/photography/</loc>
+    <lastmod>2023-05-03T19:53:44-07:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/posts/differential_privacy_laplace_01/</loc>
-    <lastmod>2022-11-17T16:21:04-08:00</lastmod>
+    <loc>https://www.dlm.rocks/projects/multimedia/</loc>
+    <lastmod>2023-05-03T19:53:44-07:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/tags/privacy/</loc>
-    <lastmod>2022-11-17T16:21:04-08:00</lastmod>
+    <loc>https://www.dlm.rocks/blog/ai_art_wins_art_contest/</loc>
+    <lastmod>2022-12-29T20:08:46-08:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/tags/front-end/</loc>
-    <lastmod>2022-12-29T21:33:14-08:00</lastmod>
+    <loc>https://www.dlm.rocks/tags/art/</loc>
+    <lastmod>2022-12-29T20:08:46-08:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/posts/how_this_all_started/</loc>
-    <lastmod>2022-12-29T21:33:14-08:00</lastmod>
+    <loc>https://www.dlm.rocks/tags/art-history/</loc>
+    <lastmod>2022-12-29T20:08:46-08:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/tags/walkthrough/</loc>
-    <lastmod>2022-12-29T21:33:14-08:00</lastmod>
+    <loc>https://www.dlm.rocks/tags/opinion/</loc>
+    <lastmod>2022-12-29T20:08:46-08:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/about/</loc>
-    <lastmod>2022-11-16T21:04:05-08:00</lastmod>
+    <loc>https://www.dlm.rocks/tags/differential-privacy/</loc>
+    <lastmod>2022-11-10T20:09:00-08:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/archives/</loc>
-    <lastmod>2022-10-01T18:42:29-07:00</lastmod>
+    <loc>https://www.dlm.rocks/blog/differential_privacy_laplace_01/</loc>
+    <lastmod>2022-11-10T20:09:00-08:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/categories/</loc>
+    <loc>https://www.dlm.rocks/tags/blog-build/</loc>
+    <lastmod>2022-10-09T21:58:50-07:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/search/</loc>
-    <lastmod>2022-10-01T18:42:29-07:00</lastmod>
+    <loc>https://www.dlm.rocks/blog/how_this_all_started/</loc>
+    <lastmod>2022-10-09T21:58:50-07:00</lastmod>
   </url><url>
-    <loc>https://dlm.rocks/series/</loc>
+    <loc>https://www.dlm.rocks/tags/project/</loc>
+    <lastmod>2022-10-09T21:58:50-07:00</lastmod>
+  </url><url>
+    <loc>https://www.dlm.rocks/series/</loc>
   </url>
 </urlset>

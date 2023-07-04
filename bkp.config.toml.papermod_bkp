@@ -1,0 +1,171 @@
+
+## Site main index configuration
+baseURL = 
+title = "home"
+paginate = 10
+theme = "PaperMod"
+
+## Build config block
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableInlineShortcodes = true
+enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
+pygmentsUseClasses = true
+googleAnalytics = "G-H6P6WVSTW2"
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+
+[languages.en]
+languageName = "English"
+weight = 1
+
+  [languages.en.taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[[languages.en.menu.main]]
+name = "about"
+url = "about/"
+weight = 40
+
+[[languages.en.menu.main]]
+name = "tags"
+url = "tags/"
+weight = 20
+
+[[languages.en.menu.main]]
+name = "search"
+url = "search/"
+weight = 30
+
+[[languages.en.menu.main]]
+name = "archive"
+url = "archives"
+weight = 10
+
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+## home page configuration
+[params]
+env = "production"
+# description = "Some description here"
+author = "david.moreno"
+defaultTheme = "dark"
+disableThemeToggle = false
+displayFullLangName = true
+math = false
+ShowShareButtons = true
+ShowReadingTime = true
+ShowLastMod = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowRssButtonInSectionTermList = true
+ShowToc = true
+images = [ "papermod-cover.png" ]
+
+## posts on main page configuration
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
+
+
+  ## Enabling ProfileMode settings start here
+  [params.profileMode]
+  enabled = false
+  title = "Idea Sharing (verb)"
+  summary = """
+  The act of distributing structured content on a mix of unrelated topics. \n
+  -
+  // Welcome to my corner of the internet //\n
+  // Enjoy your stay //
+  """
+  imageUrl = "#" # insert home page image here
+  imageTitle = "landing page title for image"
+
+    [[params.profileMode.buttons]]
+    name = "Posts"
+    url = "posts"
+
+    [[params.profileMode.buttons]]
+    name = "Archives"
+    url = "archives"
+
+    [[params.profileMode.buttons]]
+    name = "Tags"
+    url = "tags"
+  ## Enabling ProfileMode settings end here
+
+  [params.homeInfoParams]
+  Title = "Idea Sharing (verb)"
+  Content = """
+  The act of distributing structured content on a mix of unrelated topics. \n
+  -
+  // Welcome to my corner of the internet //\n
+  // Enjoy your stay //
+  """
+
+  [[params.socialIcons]]
+  name = "email"
+  url = "mailto:morendav68@gmail.com"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/davidlmoreno/"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/morendav"
+
+  [[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/_morendav"
+
+  [[params.socialIcons]]
+  name = "Rss"
+  url = "index.xml"
+
+  [params.assets]
+  disableHLJS = true
+
+
+
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+noClasses = false
+
+[privacy.vimeo]
+disabled = false
+simple = true
+
+[privacy.twitter]
+disabled = true
+enableDNT = true
+simple = true
+
+[privacy.instagram]
+disabled = false
+simple = true
+
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true
+
+[services.instagram]
+disableInlineCSS = true
+
+[services.twitter]
+disableInlineCSS = true

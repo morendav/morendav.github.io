@@ -3,7 +3,8 @@
 
 1. create new post, and edit from ATOM
 ```
-hugo new posts/postname.md
+hugo new posts/postname.md    # for papermod theme
+hugo new blog/2023_mia.md     # for intro theme 
 ```
 
 2. test deploy locally

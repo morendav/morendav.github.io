@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+        
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H6P6WVSTW2"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-H6P6WVSTW2', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="An idea sharing site about (art, tech, privacy, ...)">
+<title>
+Differential Privacy Primer &amp; Laplace Case Study - idea.sharing
+</title>
+
+
+
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false}
+        ]
+    });
+});
+</script>
+
+        <meta property="og:title" content="Differential Privacy: Primer &amp; Laplace Case Study - idea.sharing" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Introduction to Differential Privacy and its definition, the additive noise mechanisms to satisfy it, and a case study to explore the effect that epsilon and source data skew have on the noise distribution."/>
+<meta property="og:url" content="https://www.dlm.rocks/blog/differential_privacy_laplace_01/"/>
+<meta property="og:site_name" content="idea.sharing"/>
+
+
+
+
+<meta property="og:image" content="https://www.dlm.rocks/home/deep_space_image.jpeg"/>
+
+<meta property="og:image" content="https://www.dlm.rocks/home/profile_pic_pixelated.jpg"/>
+
+<meta property="og:image" content="https://www.dlm.rocks/home/profile_pic_pixelated_large.jpg"/>
+
+
+
+
+        
+<link rel="shortcut icon" href="/images/home/favicon.ico">
+
+
+        
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.1e45e4171bef6778f7b61091ddf241a021362d3dbe651a0b01dfd50028f31a6e.css" integrity="sha256-HkXkFxvvZ3j3thCR3fJBoCE2LT2&#43;ZRoLAd/VACjzGm4=" crossorigin="anonymous" media="screen">
+
+
+
+
+
+        
+        
+        
+        
+    </head>
+    <body>
+        <section id="top" class="section">
+            
+            <div class="container hero  fade-in one ">
+                
+
+<h1 class="bold-title is-1">Blog</h1>
+
+
+            </div>
+            
+            <div class="section  fade-in two ">
+                
+
+<div class="container">
+    <hr>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+        <div class="navbar-menu " id="navMenu">
+            
+            
+            
+            
+            <a class="navbar-item" href="/">main</a>
+            
+
+            
+            
+
+            
+                
+            
+
+            
+                
+            
+
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                  <a class="navbar-item" href="https://www.dlm.rocks/blog/">
+                  
+                  Back to Blog
+                  
+                  </a>
+                
+                
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                  <a class="navbar-item" href="https://www.dlm.rocks/projects/">
+                  
+                  
+                  Projects
+                  
+                  
+                  </a>
+                
+                
+            
+            
+            
+            
+            
+            <a class="navbar-item" href="/#about_me">About: Creator</a>
+            
+            
+            
+            
+            
+            <a class="navbar-item" href="/#about_site">About: Site</a>
+            
+            
+            
+            
+
+            
+            
+            <a class="navbar-item" href="/#contact">Contact</a>
+            
+            
+
+            
+
+            
+            <a class="navbar-item" href="https://www.dlm.rocks/index.xml"><i class="fas fa-rss"></i></a>
+            
+            
+        </div>
+    </nav>
+    <hr>
+</div>
+
+
+
+
+                
+<div class="container">
+    <h2 class="title is-1 top-pad strong-post-title">
+        <a href="https://www.dlm.rocks/blog/differential_privacy_laplace_01/">Differential Privacy: Primer &amp; Laplace Case Study</a>
+    </h2>
+    
+    <h4 class="title is-4">
+        
+        By&nbsp;D.Moreno</h4>
+    
+    <div class="post-data">
+        Nov 10, 2022
+        
+         | 
+        11 minutes read
+        
+    </div>
+    
+    <div class="blog-share">
+        Share this:
+        
+        <a class="twitter-share-button"
+            href="https://twitter.com/intent/tweet?text=Differential%20Privacy%3a%20Primer%20%26amp%3b%20Laplace%20Case%20Study%20https%3a%2f%2fwww.dlm.rocks%2fblog%2fdifferential_privacy_laplace_01%2f"
+            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <i class="fab fa-twitter"></i>
+            <span class="hidden">Twitter</span>
+        </a>
+        
+        
+        
+        <a class="icon-pinterest"
+            href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.dlm.rocks%2fblog%2fdifferential_privacy_laplace_01%2f&amp;description=Differential%20Privacy%3a%20Primer%20%26%20Laplace%20Case%20Study"
+            onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+            <i class="fab fa-pinterest-p"></i>
+            <span class="hidden">Pinterest</span>
+        </a>
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <p>
+        Tags:
+        
+        <a href="/tags/differential-privacy">
+            Differential Privacy</a>,
+        
+        <a href="/tags/privacy">
+            Privacy</a>,
+        
+        <a href="/tags/case-study">
+            Case Study</a>
+        
+    </p>
+    
+    
+    
+    
+</div>
+
+<div class="container markdown top-pad">
+    <p>This post serves as a primer to Differential Privacy: presenting an intuitive foundation for the definition, proceeding to some math, and finally presenting a case study to demonstrate some key concepts.</p>
+<hr>
+
+<h1 id="-tldr" class="anchor-link"><a href="#-tldr">📌 TL;DR</a></h1>
+<ul>
+<li>Differential Privacy are a <em><strong>class of algorithms and a formal mathematical definition</strong></em> that, if met, provides an upper bound to the potential privacy loss for a query response (data release).</li>
+<li>The formulation stems from the intuition that we can reason about (and quantify) the privacy of some algorithm that shrouds in <em><strong>uncertainty whether or not a user&rsquo;s data was in the dataset</strong></em> that informed the result.</li>
+</ul>
+<table>
+  <tr>
+   <td><strong>Differential Privacy is a definition</strong>
+   </td>
+   <td>
+<ul>
+<li>There isn’t a single solution to meet the definition, instead there are multiple mechanisms that can be used
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Differentially Private algorithms allow us to quantify the privacy loss</strong>
+   </td>
+   <td>
+<ul>
+<li>For any single query we are able to quantify the upper bound of the amount of secret information a response may reveal
+<li>DP is composable, so for a series of queries we can quantify the total privacy loss <a href="/blog/differential_privacy_laplace_01/#proof_composition"> / Proof /</a>
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Epsilon is our measure of privacy loss</strong>
+   </td>
+   <td>
+<ul>
+<li>For series of queries run over the same dataset- we can set a global epsilon value and budget across all the queries
+<li>Lower epsilon = lower accuracy, higher noise, and greater privacy <a href="/blog/differential_privacy_laplace_01/#proof_epsilon">/ Proof /</a> and <a href="/blog/differential_privacy_laplace_01/#case_study_epsilon">/ Case Study/ </a>
+</li>
+</ul>
+   </td>
+  </tr>
+</table>
+<hr>
+
+<h1 id="the-theory-what-is-differential-privacy" class="anchor-link"><a href="#the-theory-what-is-differential-privacy">The Theory: What is Differential Privacy</a></h1>
+<p>The foundation of Differential Privacy (DP) is the notion that an individual’s privacy is protected in a dataset if the individual’s contribution is simply excluded from the set of records, assuming data is independent.</p>
+<p>Consider an algorithm that takes as input a database of user records, and outputs the average of all records. If this algorithm excluded from its calculation the contribution from a target user, or if the database did not include any contribution from that target user, then as long as records in the database were independent it follows that within the scope of what can be revealed by that algorithm the target’s data stays a secret. Specifically, DP concerns itself with shrouding in uncertainty a target’s participation in the dataset that produced the output that was released.</p>
+<p>DP algorithms are a class of algorithms that are derived from this intuition, and that carry a mathematical guarantee for the upper-bound privacy loss of each query or data release. This mathematical formulation was the culmination of decades of privacy research, which demonstrated that prior privacy preserving standards were leaky: with enough time and repeated releases it is infeasible to make any lasting guarantee about privacy. <sub><cite><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></sub> This insight motivated the development of a new standard which stemmed from the <em>missing member in database</em> intuition and was presented in the seminal work by C. Dwork et al. “Calibrating Noise to Sensitivity in Private Data Analysis”. <sub><cite><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></cite></sub> In their work they introduced the mathematics to describe a DP algorithm, as well as a generalized approach to implementation which, in its original or derivative forms, has since become recognized as the gold standard for privacy preserving data transformations.</p>
+<p>From an adversarial point of view, DP roughly means that for a given query output we would be uncertain (quantifiably so) that the output was derived from a database that did or did not contain a target user’s data. Paying homage to the cryptographic roots of privacy research and differential privacy, this is analogous to <em>semantic security</em> in a cryptosystem.</p>
+
+<h2 id="why-was-dp-groundbreaking" class="anchor-link"><a href="#why-was-dp-groundbreaking">Why was DP groundbreaking?</a></h2>
+<p>DP departed from previous attempts at generalized privacy preserving algorithms and standards notably with two characteristics:</p>
+<ol>
+<li>A quantification of the upper-bound privacy loss that might result for a data release</li>
+<li>Formalization of the privacy loss for repeated data releases from the same source data</li>
+</ol>
+<p>The second of these observations is a result of DP being composable, this property allows data curators to set a global maximum privacy budget which is divided among the applications of the confidential data - the proof and practical interpretation on this later in this post.</p>
+<p>Together, these new characteristics of the data processing mean that a system that adheres to the strict mathematical definition that is DP allows us to reason about and quantify the privacy risk against privacy attacks today as well as into the future. <sub><cite><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></cite></sub></p>
+
+<h2 id="the-math-derivation-of-differential-privacy" class="anchor-link"><a href="#the-math-derivation-of-differential-privacy">The Math: Derivation of Differential Privacy</a></h2>
+<p>
+is said to satisfy epsilon Differential Privacy (εDP) <cite><sub><sup id="fnref1:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></sub></cite>
+</p>
+<p>$$
+\tag{1} Pr \Big(\mathbb{A}(D_1) \in S \Big) \leq	 \
+e ^ \epsilon \cdotp	 Pr \Big(\mathbb{A}(D_2) \in S \Big)
+$$</p>
+
+
+<h4 id="proof_epsilon" class="anchor-link"><a href="#proof_epsilon"></a></h4>
+<p>$$
+\tag{2} \frac {Pr\Big(\mathbb{A}(D_1) \in S \Big)} {Pr \Big(\mathbb{A}(D_2) \in S \Big)}\
+\leq e ^ \epsilon
+$$</p>
+<p>
+δ <sub><cite><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></cite></sub> :</p>
+<p>$$
+\tag{3} Pr \Big(\mathbb{A}(D_1) \in S \Big) \leq	 \
+e ^ \epsilon \cdotp	 Pr \Big(\mathbb{A}(D_2) \in S \Big) + \delta
+$$</p>
+<p>This error term can be roughly interpreted as the likelihood that the strict definition doesn’t hold. For brevity’s sake, I will introduce this here and leave as a teaser the fact that the error term can exist and that it exists to balance engineering practicality with the otherwise strict DP definition (besides… I need to save some content for future idea sharing posts! :wink:)</p>
+
+<h3 id="a-quick-proof-quantifying-privacy-loss-for-repeated-queries" class="anchor-link"><a href="#a-quick-proof-quantifying-privacy-loss-for-repeated-queries">A quick proof… Quantifying Privacy Loss for Repeated Queries</a></h3>
+<p>In order to reason about the upper bound for repeated queries we need to prove that εDP is sequentially composable:</p>
+
+
+<h4 id="proof_composition" class="anchor-link"><a href="#proof_composition"></a></h4>
+<p>$$
+\tag{4.1} Pr \Big(\mathbb{A_1}(D_1) \in \mathcal{R_1} \Big) \leq	 \
+e ^ {\epsilon_1} \cdotp	 Pr \Big(\mathbb{A_1}(D_2) \in \mathcal{R_1} \Big)
+$$
+$$
+\tag{4.2} Pr \Big(\mathbb{A_2}(D_1) \in \mathcal{R_2}  \Big) \leq	 \
+e ^ {\epsilon_2} \cdotp	 Pr \Big(\mathbb{A_2}(D_2) \in \mathcal{R_2} \Big)
+$$</p>
+
+<p>$$
+\tag{4.3}
+\frac
+{Pr \Big(\mathbb{C}(D_1) = (r_1, r_2 ) \Big)}
+{Pr \Big(\mathbb{C}(D_2) = (r_1, r_2 ) \Big)}
+=
+\frac
+{Pr \Big(\mathbb{A_1}(D_1) = r_1 \Big)}
+{Pr \Big(\mathbb{A_1}(D_2) = r_1 \Big)}
+\frac
+{Pr \Big(\mathbb{A_2}(D_1) = r_2 \Big)}
+{Pr \Big(\mathbb{A_2}(D_2) = r_2 \Big)}
+$$</p>
+<p>By a matter of substitution using Equation 2, we have:</p>
+<p>$$
+\tag{4.4}
+\frac
+{Pr \Big(\mathbb{C}(D_1) = (r_1, r_2 ) \Big)}
+{Pr \Big(\mathbb{C}(D_2) = (r_1, r_2 ) \Big)}
+\leq
+e ^ {\epsilon_1}
+e ^ {\epsilon_2}
+$$</p>
+<p>$$
+\tag{4.4}
+\frac
+{Pr \Big(\mathbb{C}(D_1) = (r_1, r_2 ) \Big)}
+{Pr \Big(\mathbb{C}(D_2) = (r_1, r_2 ) \Big)}
+\leq
+e ^ {\epsilon_1 + \epsilon_2}
+$$</p>
+<p>This can be generalized for any algorithm that is the composite of N independent differentially private algorithms:</p>
+<p>$$
+\tag{4.5}
+\frac
+{Pr \Big(\mathbb{C}(D_1) = (r_1, r_2, &hellip; r_n) ) \Big)}
+{Pr \Big(\mathbb{C}(D_2) = (r_1, r_2, &hellip; r_n) \Big)}
+\leq
+e ^ {\epsilon_1 + \epsilon_2 + &hellip; + \epsilon_n}
+$$</p>
+<p>The sum of all privacy losses is the global privacy loss, which can be divided between the N algorithms as needed. The composability of DP tells us that theoretically we can assert that at most privacy erodes linearly with respect to n-epsilons, though in practice it is sublinear.</p>
+
+<h3 id="and-a-bit-more-math-poking-at-epsilon" class="anchor-link"><a href="#and-a-bit-more-math-poking-at-epsilon">And a bit more math… Poking at ε</a></h3>
+
+<p>$$
+\tag{2}
+\Bigg(
+\frac
+{Pr\Big(\mathbb{A}(D_1) \in S \Big)}
+{Pr \Big(\mathbb{A}(D_2) \in S \Big)}
+\leq
+{ e ^ \epsilon }
+\Bigg)
+{\Bigg\vert _{\epsilon \rightarrow 0}}
+$$</p>
+<p>$$
+\tag{2.1}
+\frac
+{Pr\Big(\mathbb{A}(D_1) \in S \Big)}
+{Pr \Big(\mathbb{A}(D_2) \in S \Big)}
+\leq
+1
+$$</p>
+
+<hr>
+
+<h1 id="in-practice" class="anchor-link"><a href="#in-practice">In Practice</a></h1>
+<p>DP’s definition is really a conceptual property that describes a data transformation. There are a few potential transformations that satisfy this property, some popular mechanisms are <em>additive noise mechanisms</em> which sample noise from a distribution and inject that noise into the query response. Some popular additive noise mechanisms are:</p>
+
+<h3 id="laplace-mechanism" class="anchor-link"><a href="#laplace-mechanism">Laplace Mechanism</a></h3>
+<p>This mechanism is the canonical DP mechanism that satisfies ε-DP (Equation 01), and is otherwise known as ‘pure differential privacy’. This mechanism samples noise from a zero-centered <a href="https://en.wikipedia.org/wiki/Laplace_distribution">Laplace distribution</a> and injects this noise into the data release. <sub><cite><sup id="fnref2:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></cite></sub></p>
+
+<h3 id="gaussian-mechanism" class="anchor-link"><a href="#gaussian-mechanism">Gaussian Mechanism</a></h3>
+<p>The Gaussian mechanism is very similar to the Laplace mechanism, except it uses a zero-centered, variance bound <a href="https://en.wikipedia.org/wiki/Normal_distribution">Guassian distribution</a> and does not satisfy ε-DP, instead it satisfies (ε, δ) Differential Privacy (Equation 03). In addition to restrictions on the Noise-Distribution’s variance, this additive noise mechanism only holds true to (ε, δ) DP when ϵ &lt; 1.</p>
+
+<h3 id="hammer-implementation-tips" class="anchor-link"><a href="#hammer-implementation-tips">:hammer: Implementation tips</a></h3>
+<p>Differential Privacy is a powerful tool, while wielding it watch for:</p>
+<ul>
+<li><em><strong>Dimensions in the source data that are correlated</strong></em>: this leads to leaky privacy guarantees</li>
+<li><em><strong>Extreme outliers in the data</strong></em>: users in the long tails of data are more identifiable, require more noise to mask. Consider binning data into ranges to address this. This is also the <a href="/blog/differential_privacy_laplace_01/#case_study_long_tail">subject of the case study</a></li>
+</ul>
+
+<h2 id="dp-with-privacy-budget-accounting" class="anchor-link"><a href="#dp-with-privacy-budget-accounting">DP with Privacy Budget Accounting</a></h2>
+<p>Composition has been demonstrated for εDP algorithms, which allows us to define a global limit on the maximum privacy loss that we will allow for a given dataset. When this global privacy loss is set, multiple queries are each assigned some portion of the whole budget. In other words, repeated queries <strong><em>deplete the global privacy budget</em></strong>.</p>
+<p>Referring back to Equation 02 - note that for lower ε values we expect more uncertainty in which of the datasets the algorithm’s output came from D<sub>1</sub> or D<sub>2</sub>.  As a generalization we have:</p>
+<p><strong>Lower ε value:</strong></p>
+<ul>
+<li>Higher the noise we expect in the query response</li>
+<li>Lower accuracy in the query response as a result of the noise</li>
+<li>Better privacy story, but at the expense of the data utility</li>
+</ul>
+
+<h3 id="wrench-epsilon-setting-tips" class="anchor-link"><a href="#wrench-epsilon-setting-tips">:wrench: ε Setting Tips</a></h3>
+<p>Fixing the global privacy budget means that <em><strong>care is needed when accounting for where to allocate higher accuracy queries</strong></em>, or where a sacrifice on accuracy may be made to stay within the budget.</p>
+<p>In addition to careful accounting, <em><strong>cached answers can extend the budget</strong></em>. During the fulfillment of the query-response protocol: cache answers to queries, and retrieve cached answers when the same query is issued multiple times to the database. This type of response-replay won’t deplete the privacy budget, and ensures no additional information is learned about the data’s subjects for repeated queries.</p>
+<hr>
+
+<h1 id="case-study" class="anchor-link"><a href="#case-study">Case Study</a></h1>
+<p>The following case study is <a href="https://github.com/morendav/pydp_laplace">hosted on GitHub</a>, which includes a Creative Commons licensed <a href="https://www.kaggle.com/datasets/parisrohan/credit-score-classification">dataset</a> (thanks Kaggle!).
+In this case study we will be exploring the implementation of <a href="https://github.com/OpenMined/PyDP">OpenMined PyDP</a> which is a python wrapper that makes use of Google’s open source <a href="https://github.com/google/differential-privacy">C++ Differential Privacy library</a>. This Python library uses the Laplace mechanism of additive noise to satisfy εDP.</p>
+<p><strong>Objective</strong>: In this case study we will see the effect that:</p>
+<ol>
+<li>Different ε values have on the differential privacy noise</li>
+<li>Long tail skew in the source data have on differential privacy noise</li>
+</ol>
+
+<h2 id="the-data" class="anchor-link"><a href="#the-data">The Data</a></h2>
+<p>For the fulfillment of this case study the data will first need to be:</p>
+<ul>
+<li>Sanitized (e.g. correct string entries in numeric columns, etc)</li>
+<li>Columns dropped (the data cube diced)</li>
+</ul>
+<p>In addition to this clean up, we can drop all but the last month’s data for simplicity&rsquo;s sake (data cube sliced). For the remainder of the case study we will be using the ‘Annual_Income‘ dimension only.</p>
+<figure class="align-center"><a href="https://github.com/morendav/pydp_laplace/blob/main/1000%20iterations%2C%20epsilon%200.85/annual_income_distribution_plots.png" target="_blank"><img src="https://raw.githubusercontent.com/morendav/pydp_laplace/main/1000%20iterations%2C%20epsilon%200.85/annual_income_distribution_plots.png"/></a><figcaption>
+            <h4>Annual Income plotted in linear and log scale</h4>
+        </figcaption>
+</figure>
+
+<p>This is a terrific dimension to explore: it exhibits a rich (pun intended :moneybag:), long tailed right skew. Note that the tail is so long that it is impractical to plot annual income in linear scale (left), in log-scale we get a greater sense of where most users are and where only a few, very wealthy users are.</p>
+
+<h2 id="the-private-queries" class="anchor-link"><a href="#the-private-queries">The Private Queries</a></h2>
+<p>The Git <a href="https://github.com/morendav/pydp_laplace/blob/main/laplace.py">Python project</a> includes methods for private queries:</p>
+<ul>
+<li>Repeated_average</li>
+<li>Repeated_sum</li>
+<li>Repated_max</li>
+</ul>
+<p>Which take as input:</p>
+<ul>
+<li>iterations (integer) number of times the private query will be repeated</li>
+<li>privacy_budget (float) epsilon value, does not change between iterations</li>
+<li>list (array) dataframe dimension to list, that is used as source data for the private query</li>
+</ul>
+<p>These methods <em><span style="text-decoration:underline;">do not use any privacy loss budget accounting</span></em>, as a result over N-Iterations we expect a nice Laplace distribution in the observed query responses that should center on the true value.</p>
+
+<h2 id="case_study_epsilon" class="anchor-link"><a href="#case_study_epsilon">Noise &amp; ε </a></h2>
+<p>Running the repeated average method over 100 iterations, with ε = [1,100] returns the following histograms of observed query respones:</p>
+<figure class="align-center"><a href="https://github.com/morendav/pydp_laplace/blob/main/100%20iterations%2C%20epsilon%20100/repeated_average_historgram.png" target="_blank"><img src="https://raw.githubusercontent.com/morendav/pydp_laplace/main/100%20iterations%2C%20epsilon%20100/repeated_average_historgram.png"/></a><figcaption>
+            <h4>Repeated Private Average Queries, 100 iterations with Epsilon = 100</h4>
+        </figcaption>
+</figure>
+
+<figure class="align-center"><a href="https://github.com/morendav/pydp_laplace/blob/main/100%20iterations%2C%20epsilon%201/repeated_average_historgram.png" target="_blank"><img src="https://raw.githubusercontent.com/morendav/pydp_laplace/main/100%20iterations%2C%20epsilon%201/repeated_average_historgram.png"/></a><figcaption>
+            <h4>Repeated Private Average Queries, 100 iterations with Epsilon = 1</h4>
+        </figcaption>
+</figure>
+
+<p>As expected, a higher ε value yields query responses with lower noise injected - demonstrated by a distribution with a tighter spread, both distributions are centered on the true value which is represented by a vertical line.</p>
+
+<h2 id="case_study_long_tail" class="anchor-link"><a href="#case_study_long_tail">Noise &amp; Long-tailed data</a></h2>
+<p>We can imagine that blending in at a crowded event is much easier than trying to blend in in an otherwise empty room; so too there is a certain degree of privacy protection among a concentrated band of data rather than in a long tail. In other words, being a member of the 10<sup>7</sup> annual income club makes it difficult to apply enough noise to mask your contribution in the annual income dataset when running a private average query.</p>
+<p>Running repeated private queries with iterations = 1000 and ε = 0.85 for the raw dataset (right skew, without any skew correction) and again for a skew-corrected dataset (still right skew, but cutting off anyone that isn’t below the 95% percentile).</p>
+<p>For skew correction, we want to keep the count of unique users (in the dataset, count of rows) the same between datasets to make an apple to apple comparison. To address this, the skew-correction method takes any entry above 95 percentile, and replaces their contribution to annual income to be something within the sub-95 percentile band (using a random number generator within a bound).</p>
+<figure class="align-center"><a href="https://github.com/morendav/pydp_laplace/blob/main/1000%20iterations%2C%20epsilon%200.85/normalized_noise_observations.png" target="_blank"><img src="https://raw.githubusercontent.com/morendav/pydp_laplace/main/1000%20iterations%2C%20epsilon%200.85/normalized_noise_observations.png"/></a><figcaption>
+            <h4>Normalized noise observations for repeated private queries, 1000 iterations, epsilon = 0.85</h4>
+        </figcaption>
+</figure>
+
+<p>These histograms are normalized to their respective distributions&rsquo; average salary. Eliminating the long tail results in over a degree of magnitude change for the normalized noise distributions. :eyes:</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Irit Dinur and Kobbi Nissim, <a href="https://crypto.stanford.edu/seclab/sem-03-04/psd.pdf">Revealing information while preserving privacy</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Cynthia Dwork, Frank McSherry, Kobbi Nissim, and Adam Smith, <a href="https://link.springer.com/chapter/10.1007/11681878_14">Calibrating noise to sensitivity in private data analysis</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref2:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Kobbi Nissim , Thomas Steinke , Alexandra Wood, Micah Altman, Aaron Bembenek, Mark Bun, Marco Gaboardi, David R. O’Brien, and Salil Vadhan, <a href="https://privacytools.seas.harvard.edu/files/privacytools/files/pedagogical-document-dp_new.pdf">Differential Privacy: A Primer for a Non-technical Audience</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Cynthia Dwork, Krishnaram Kenthapadi, Frank McSherry, Ilya Mironov, and Moni Naor, <a href="https://www.iacr.org/archive/eurocrypt2006/40040493/40040493.pdf">Our data, Ourselves: Privacy via Distributions Noise Generation</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+</div>
+
+
+
+
+
+                
+                <div class="container">
+    <hr>
+</div>
+<div class="container has-text-centered top-pad">
+    <a href="#top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+</div>
+
+<div class="container">
+    <hr>
+</div>
+
+                <div class="section" id="footer">
+    <div class="container has-text-centered">
+    
+        <span class="footer-text">
+            // Powered by <a href="http://gohugo.io/">Hugo</a> and <a href="https://github.com/victoriadrake/hugo-theme-introduction/">Introduction</a> // Hosted on <a href="https://firebase.google.com/">Firebase</a> //
+        </span>
+    
+    </div>
+</div>
+
+                
+            </div>
+        </section>
+        
+        
+
+
+<script src="https://www.dlm.rocks/js/bundle.5c23c0437f001a469ca373a465a6f7487203d18e10cdff76d86a60af66d5ee28.js" integrity="sha256-XCPAQ38AGkaco3OkZab3SHID0Y4Qzf922Gpgr2bV7ig="></script>
+
+
+
+
+        
+        
+        
+        
+    </body>
+</html>

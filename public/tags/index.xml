@@ -1,93 +1,99 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on home</title>
-    <link>https://dlm.rocks/tags/</link>
-    <description>Recent content in Tags on home</description>
-    <image>
-      <url>https://dlm.rocks/papermod-cover.png</url>
-      <link>https://dlm.rocks/papermod-cover.png</link>
-    </image>
+    <title>Tags on idea.sharing</title>
+    <link>https://www.dlm.rocks/tags/</link>
+    <description>Recent content in Tags on idea.sharing</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 29 Dec 2022 20:08:46 -0800</lastBuildDate><atom:link href="https://dlm.rocks/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Art</title>
-      <link>https://dlm.rocks/tags/art/</link>
-      <pubDate>Thu, 29 Dec 2022 20:08:46 -0800</pubDate>
-      
-      <guid>https://dlm.rocks/tags/art/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Art History</title>
-      <link>https://dlm.rocks/tags/art-history/</link>
-      <pubDate>Thu, 29 Dec 2022 20:08:46 -0800</pubDate>
-      
-      <guid>https://dlm.rocks/tags/art-history/</guid>
-      <description></description>
-    </item>
-    
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Jul 2023 20:09:00 -0800</lastBuildDate><atom:link href="https://www.dlm.rocks/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Artificial Intelligence</title>
-      <link>https://dlm.rocks/tags/artificial-intelligence/</link>
-      <pubDate>Thu, 29 Dec 2022 20:08:46 -0800</pubDate>
+      <link>https://www.dlm.rocks/tags/artificial-intelligence/</link>
+      <pubDate>Sat, 01 Jul 2023 20:09:00 -0800</pubDate>
       
-      <guid>https://dlm.rocks/tags/artificial-intelligence/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Opinion</title>
-      <link>https://dlm.rocks/tags/opinion/</link>
-      <pubDate>Thu, 29 Dec 2022 20:08:46 -0800</pubDate>
-      
-      <guid>https://dlm.rocks/tags/opinion/</guid>
+      <guid>https://www.dlm.rocks/tags/artificial-intelligence/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Case Study</title>
-      <link>https://dlm.rocks/tags/case-study/</link>
-      <pubDate>Thu, 10 Nov 2022 20:09:00 -0800</pubDate>
+      <link>https://www.dlm.rocks/tags/case-study/</link>
+      <pubDate>Sat, 01 Jul 2023 20:09:00 -0800</pubDate>
       
-      <guid>https://dlm.rocks/tags/case-study/</guid>
+      <guid>https://www.dlm.rocks/tags/case-study/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Differential Privacy</title>
-      <link>https://dlm.rocks/tags/differential-privacy/</link>
-      <pubDate>Thu, 10 Nov 2022 20:09:00 -0800</pubDate>
+      <title>Membership Inference Attack</title>
+      <link>https://www.dlm.rocks/tags/membership-inference-attack/</link>
+      <pubDate>Sat, 01 Jul 2023 20:09:00 -0800</pubDate>
       
-      <guid>https://dlm.rocks/tags/differential-privacy/</guid>
+      <guid>https://www.dlm.rocks/tags/membership-inference-attack/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Privacy</title>
-      <link>https://dlm.rocks/tags/privacy/</link>
+      <link>https://www.dlm.rocks/tags/privacy/</link>
+      <pubDate>Sat, 01 Jul 2023 20:09:00 -0800</pubDate>
+      
+      <guid>https://www.dlm.rocks/tags/privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Art</title>
+      <link>https://www.dlm.rocks/tags/art/</link>
+      <pubDate>Thu, 29 Dec 2022 20:08:46 -0800</pubDate>
+      
+      <guid>https://www.dlm.rocks/tags/art/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Art History</title>
+      <link>https://www.dlm.rocks/tags/art-history/</link>
+      <pubDate>Thu, 29 Dec 2022 20:08:46 -0800</pubDate>
+      
+      <guid>https://www.dlm.rocks/tags/art-history/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Opinion</title>
+      <link>https://www.dlm.rocks/tags/opinion/</link>
+      <pubDate>Thu, 29 Dec 2022 20:08:46 -0800</pubDate>
+      
+      <guid>https://www.dlm.rocks/tags/opinion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Differential Privacy</title>
+      <link>https://www.dlm.rocks/tags/differential-privacy/</link>
       <pubDate>Thu, 10 Nov 2022 20:09:00 -0800</pubDate>
       
-      <guid>https://dlm.rocks/tags/privacy/</guid>
+      <guid>https://www.dlm.rocks/tags/differential-privacy/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Front-end</title>
-      <link>https://dlm.rocks/tags/front-end/</link>
+      <title>Blog Build</title>
+      <link>https://www.dlm.rocks/tags/blog-build/</link>
       <pubDate>Sun, 09 Oct 2022 21:58:50 -0700</pubDate>
       
-      <guid>https://dlm.rocks/tags/front-end/</guid>
+      <guid>https://www.dlm.rocks/tags/blog-build/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Walkthrough</title>
-      <link>https://dlm.rocks/tags/walkthrough/</link>
+      <title>Project</title>
+      <link>https://www.dlm.rocks/tags/project/</link>
       <pubDate>Sun, 09 Oct 2022 21:58:50 -0700</pubDate>
       
-      <guid>https://dlm.rocks/tags/walkthrough/</guid>
+      <guid>https://www.dlm.rocks/tags/project/</guid>
       <description></description>
     </item>
     

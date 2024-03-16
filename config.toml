@@ -14,19 +14,19 @@ googleAnalytics                  = "G-H6P6WVSTW2"         # https://gohugo.io/te
     fadeIn                       = true                    # Turn on/off the fade-in effect
     fadeInIndex                  = true                    # Turn on/off the fade-in effect on the index page even if fade-in was otherwise turned off
     dateFormat                   = "Jan 2, 2006"
-    # email                        = "morendav68@gmail.com"  # E-mail address for contact section
+    # email                      = "morendav68@gmail.com"  # E-mail address for contact section
     # customCSS                  = ["foo.css"]             # Include custom css files placed under assets/
     # customJS                   = ["foo.js"]              # Include custom JavaScript files placed under assets/
     # plausible                  = true                    # Use Plausible analytics (requires an account at Plausible.io)
 
     # Configure the home page
     [params.home]
-        introHeight              = "medium"            # Input either "medium" or "large" or "fullheight"
+        introHeight              = "medium"                # Input either "medium" or "large" or "fullheight"
         showLatest               = true                    # Show latest blog post summary
         showAllPosts             = false                   # Set true to list all posts on home page, or set false to link to separate blog list page
         allPostsArchiveFormat    = true                    # show all posts in an archive format
         numberOfProjectsToShow   = 2                       # Maximum number of projects to show on home page. Unset or comment out to show all projects
-        localTime                = false                    # Show your current local time in contact section
+        localTime                = false                   # Show your current local time in contact section
         timeZone                 = "America/Los_Angeles"   # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
         timeFormat               = "en-US"                 # Language specific format to use
     [params.projects]

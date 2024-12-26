@@ -9,7 +9,16 @@
       <link>https://dlm.rocks/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 29 Dec 2022 20:08:46 -0800</lastBuildDate><atom:link href="https://dlm.rocks/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Jul 2023 20:09:00 -0800</lastBuildDate><atom:link href="https://dlm.rocks/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Membership Inference Attack: Primer &amp; Case Study</title>
+      <link>https://dlm.rocks/posts/membership_inference_attack_01/</link>
+      <pubDate>Sat, 01 Jul 2023 20:09:00 -0800</pubDate>
+      
+      <guid>https://dlm.rocks/posts/membership_inference_attack_01/</guid>
+      <description>Introduction to ML model memorization and privacy assessments using memcership inference attacks.</description>
+    </item>
+    
     <item>
       <title>AI in Art &amp; Creativity</title>
       <link>https://dlm.rocks/posts/ai_art_wins_art_contest/</link>

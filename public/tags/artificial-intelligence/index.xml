@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Artificial Intelligence on idea.sharing</title>
-    <link>https://www.dlm.rocks/tags/artificial-intelligence/</link>
-    <description>Recent content in Artificial Intelligence on idea.sharing</description>
+    <title>Artificial Intelligence on home</title>
+    <link>https://dlm.rocks/tags/artificial-intelligence/</link>
+    <description>Recent content in Artificial Intelligence on home</description>
+    <image>
+      <url>https://dlm.rocks/papermod-cover.png</url>
+      <link>https://dlm.rocks/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 01 Jul 2023 20:09:00 -0800</lastBuildDate><atom:link href="https://www.dlm.rocks/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Jul 2023 20:09:00 -0800</lastBuildDate><atom:link href="https://dlm.rocks/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Membership Inference Attack: Primer &amp; Case Study</title>
-      <link>https://www.dlm.rocks/blog/membership_inference_attack_01/</link>
+      <link>https://dlm.rocks/posts/membership_inference_attack_01/</link>
       <pubDate>Sat, 01 Jul 2023 20:09:00 -0800</pubDate>
       
-      <guid>https://www.dlm.rocks/blog/membership_inference_attack_01/</guid>
-      <description>&lt;p&gt;Machine learning models depend on large troves of data to develop and improve their inference / prediction capabilities. These models generalize their abilities, but inevitably some of their training data is encoded or memorized within their trained parameters. This post explores a method of quantifying model memorization, factors that make models more prone to memorization, and provides some mitigations against memorization.&lt;/p&gt;</description>
+      <guid>https://dlm.rocks/posts/membership_inference_attack_01/</guid>
+      <description>Introduction to ML model memorization and privacy assessments using memcership inference attacks.</description>
     </item>
     
     <item>
       <title>AI in Art &amp; Creativity</title>
-      <link>https://www.dlm.rocks/blog/ai_art_wins_art_contest/</link>
+      <link>https://dlm.rocks/posts/ai_art_wins_art_contest/</link>
       <pubDate>Thu, 29 Dec 2022 20:08:46 -0800</pubDate>
       
-      <guid>https://www.dlm.rocks/blog/ai_art_wins_art_contest/</guid>
-      <description>&lt;p&gt;Why concerns about these new tools are echoes from previous generations and what they mean for the future of art and creativity.&lt;/p&gt;</description>
+      <guid>https://dlm.rocks/posts/ai_art_wins_art_contest/</guid>
+      <description>Artist enters AI generated art into contest and wins, faces push back from online communities.</description>
     </item>
     
   </channel>

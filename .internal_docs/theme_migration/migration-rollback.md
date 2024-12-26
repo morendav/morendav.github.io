@@ -47,6 +47,8 @@ Plan: Option 2
 ## Update - Dec 2024
 
 Status: Migration completed
+- main to remote main push
+- pushed to site
 
 Rationale for rollback: 
 - papermod has search feature

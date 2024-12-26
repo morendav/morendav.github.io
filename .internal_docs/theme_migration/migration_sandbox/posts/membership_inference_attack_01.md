@@ -332,7 +332,7 @@ The canonical CIFAR10 dataset was used for these experiments, although experimen
 ### Experiment Design 
 
 
-#### **Experiment 1**
+#### Experiment 1
 
 Trains two models with different architectures but similar ‘depth’
 
@@ -403,7 +403,7 @@ Non-trainable params: 0
 
 
 
-### Experiment 2
+#### Experiment 2
 
 Uses two models with the same unit architecture, but different depths. In this experiment the Conv2D model is no longer used, instead two Dense NN are created with depths 3, and 6 (but actually 4 and 7, see note from experiment 1). 
 
@@ -603,5 +603,3 @@ Holding the model constant between the 10 and 4 class datasets means that there 
 [^4]: Nicholas Carlini, Steve Chien, Milad Nasr, Shuang Song, Andreas Terzis, & Florian Tramer. (2022). Membership Inference Attacks From First Principles. [https://arxiv.org/pdf/2112.03570.pdf](https://arxiv.org/pdf/2112.03570.pdf) 
 
 [^5]: Yiyong Liu, Zhengyu Zhao, Michael Backes, & Yang Zhang. (2022). Membership Inference Attacks by Exploiting Loss Trajectory. [https://arxiv.org/abs/2208.14933](https://arxiv.org/abs/2208.14933) 
-
-

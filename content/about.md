@@ -12,19 +12,9 @@ description: "About the [site, author]"
 
 ## About the Site
 
-Welcome to David's idea sharing site.
-Here you will find ramblings about topics like:
+Welcome my idea sharing site.
 
-* privacy & cybersecurity
-* ML & data science
-* Neat books
-* Good podcast recommendations
-* Maybe some artwork too
-
-*_Note: topics list is growing and subject to change_
-
-
-Recently, infrared radiation was recorded from the deepest pocket of space we've seen (albeit for a small slice) of our known Universe. It took in the order of 10<sup>10</sup> years for this information to reach your computer screen, I commit to posting at least more often than it has taken for this deep space to reach you :+1:
+Around the time I launched this site, infrared radiation was recorded from the deepest pocket of space we've seen (albeit for a small slice) of our known Universe. It took in the order of 10<sup>10</sup> years for this information to reach your computer screen, I commit to posting at least more often than it has taken for this deep space to reach you :+1:
 
 {{<
   figure
@@ -40,15 +30,9 @@ Recently, infrared radiation was recorded from the deepest pocket of space we've
 ### A note on privacy
   _... just when you thought you'd get away without some privacy talk ..._
 
-This site uses [Google Analytics](https://support.google.com/analytics/topic/2919631?hl=en&ref_topic=1008008), I use this data to understand:
-* what content my audience is engaging with (e.g. which pages are visited)
-* who my audience is, in coarse terms (e.g. coarse geotag)
-
-These data are used to measure content engagement.
-
-This site does not
+This site uses [Google Analytics](https://support.google.com/analytics/topic/2919631?hl=en&ref_topic=1008008). These data are used to measure content engagement. This site does not:
 * have a subscribe feature
-* comments or other content submission forms
+* have comments or other content submission forms
 * include `referrer` in share links
 
 This site is also [open source](https://github.com/morendav/morendav.github.io), so you can independently verify this :raised_hands:
@@ -61,22 +45,22 @@ This site is also [open source](https://github.com/morendav/morendav.github.io),
 
 Greetings.
 
-I am David, born and raised in the [Minneapolis area](https://goo.gl/maps/3Y5zo4mPiEcXe1tA6), and currently living in California.
+I am David, currently living in California. Here is a *pseudonymized* picture of me next to my favorite animal: an alpaca.
 
-I enjoy spending my time learning new things, spending time outdoors, and spending time with my family. Discovering activities that allow for all three at the same time is the sweet spot, if you got leads on this please let me know. Here is a fun pseudonymized pictured of myself next to an Alpaca.
+I enjoy spending my time learning new things, being outdoors, and spending time with my family. Discovering activities that allow for all three at the same time is the sweet spot, if you got leads on this let me know. 
 
 {{<
   figure
     src="/images/about/profile_pic_pixelated.jpg#center"
-    title="Pixelated engineer & an alpaca, Circa 2019"
+    title="Pixelated privacy engineer & an alpaca, Circa 2019"
     caption="Engineer makes poor attempt at privacy joke in 'about me' section"
     link="/images/about/profile_pic_pixelated.jpg"
     target="_blank" class="align-center"
 >}}
 
-In my free time I'm excited to write about stuff I find interesting, & I hope others find neat too.
+I'm excited to write about stuff I find interesting, & I hope others find neat too.
 
-Want more about me? I'll keep it short:
+ Want more about me? I'll keep it short:
 
 ### Likes
 * Traveling and trying new foods

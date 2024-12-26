@@ -22,3 +22,33 @@ Goal: migrate back from Introduction to PaperMod
 
 
 
+## Roll back plan
+
+Plan: Option 2
+
+### Rollback action plan
+[x] Update theme intro --> papermod
+[x] Move old pages to papermode folder structure
+[x] Move new post to papermode folder structure
+[x] Test all pages on locally hosted site
+[x] Update ABOUT ME section
+
+
+### Post-Rollback action plan
+[ ] Test favicon on dlm.rocks
+[ ] Test all pages on dlm.rocks
+[ ] 
+
+
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+
+## Update - Dec 2024
+
+Status: Migration completed
+
+Rationale for rollback: 
+- papermod has search feature
+- intro 'art' sectino can link to other sites e.g. instagram
+

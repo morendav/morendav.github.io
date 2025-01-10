@@ -7,5 +7,6 @@ reminders on how to keep writing in blog/* self-consistent
 * now we must
 * we would think
 * we can expect
+etc
 
 2. case studies come after the write up
